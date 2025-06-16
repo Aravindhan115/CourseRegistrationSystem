@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available Courses</title>
+  <script type="text/javascript" src="myscript.js"></script>
+
+  <style>
+    body {
+      padding: 50px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 800px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    td {
+      background-color: #ecf6fc;
+      padding: 12px;
+      font-size: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    tr:hover td {
+      background-color: #d6ebfa;
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Available Courses</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th width="100">Course ID</th>
+        <th width="150">Course Name</th>
+        <th width="150">Trainer</th>
+        <th width="140">Duration (Weeks)</th>
+      </tr>
+    </thead>
+    <tbody id="coursetable">
+      <!-- Course rows will be injected here by JavaScript -->
+    </tbody>
+  </table>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      showCourses(); // Your JavaScript function that fills the table
+    };
+  </script>
+
+</body>
+</html>

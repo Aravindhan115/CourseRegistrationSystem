@@ -1,0 +1,71 @@
+<html>
+    <head>
+    <script type="text/javascript" src="myscript.js"></script>
+
+
+        <style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #e5e7ec, #2a5298);
+        padding: 50px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+    }
+
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        background-color: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    /* th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        font-size: 16px;
+    } */
+
+    td {
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 12px 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover td {
+        background-color: #f1f1f1;
+    }
+
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+</style>
+
+    
+    </head>
+    <body>
+        <table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="100">Name</th>
+                <th width="200">Email Id</th>
+                <th width="150">Course Name</th>
+            </tr>
+
+            <tbody align="center" id="enrolledtable"></tbody> <!--Table body where rows will be inserted -->
+        </table>
+
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showEnrolledStudents();
+            };
+        </script>
+    </body>
+</html>

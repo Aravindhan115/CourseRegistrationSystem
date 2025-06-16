@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Register a course</title>
+      <style>
+    body {
+        background: linear-gradient(135deg, #1e1e1e, #2c3e50);
+        font-family: 'Segoe UI', sans-serif;
+        text-align: center;
+        padding: 50px 0;
+        margin: 0;
+    }
+
+    h1 {
+        color: #f9d342;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    form {
+        margin: auto;
+        padding: 30px;
+        width: 400px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        background-color: #3498db;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #216fa1;
+    }
+</style>
+
+
+    </head>
+    <body>
+        <h1 style="color: yellow;">Kickstart with an exciting course</h1>
+
+        <form action="http://localhost:8080/courses/register" method="post">
+            <label for="name">Enter your name:</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label for="email">Enter your emailId:</label><br>
+            <input type="email" name="emailId"><br><br>
+
+            <label for="course">Choose a Course</label><br>
+            <select id="course" name="courseName">
+                <option value="Java Essentials">Java Essentials</option>
+                <option value="Python for ML">Python for ML</option>
+                <option value="Spring Boot">Spring Boot</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+    </body>
+</html>
